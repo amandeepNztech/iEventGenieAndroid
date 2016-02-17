@@ -60,7 +60,7 @@ public class HomeActivity extends BaseActivity {
             }
         });
 
-        menu = new SlidingMenuSetup(this).setSlidingMenu();
+        menu = new SlidingMenuSetup(HomeActivity.this).setSlidingMenu();
 
         webView = (WebView)findViewById(R.id.web_view);
         webView.setWebViewClient(new MyBrowser());
